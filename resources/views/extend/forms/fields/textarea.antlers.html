@@ -1,1 +1,1 @@
-<textarea name="{{ handle }}" rows="5">{{ old }}</textarea>
+<textarea placeholder="{{ display }}" name="{{ handle }}" id="{{ handle }}" rows="5" {{ if (validate | in_array:required) }}required{{ /if }}>{{ old }}</textarea>
