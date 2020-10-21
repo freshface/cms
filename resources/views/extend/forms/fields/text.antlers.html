@@ -1,1 +1,2 @@
-<input type="{{ input_type ?? 'text' }}" name="{{ handle }}" {{ if placeholder }}placeholder="{{ placeholder }}"{{ /if }}{{ if old }}value="{{ old }}"{{ /if }}>
+<input {{ if (validate | in_array:required) }}required{{ /if }} type="{{ input_type ?? 'text' }}" name="{{ handle }}" id="{{ handle }}" {{ if placeholder }}placeholder="{{ placeholder }}"{{ /if }}{{ if old }}value="{{ old }}"{{ /if }}>
+
